@@ -1,0 +1,43 @@
+.cooperation-card {
+    padding: 20px;
+    width: 360px;
+    height: 320px;
+    background: #fff;
+    cursor: pointer;
+
+    .cooperation-card-img {
+        width: 320px;
+        height: 230px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+    }
+
+
+    .cooperation-card-title {
+        margin-top: 20px;
+
+        h3 {
+            color: #707070;
+            transition: color 0.5s;
+        }
+    }
+}
+
+.cooperation-card:hover {
+
+    img {
+        transform: scale(1.2);
+    }
+
+    .cooperation-card-title {
+        h3 {
+            color: $main-color;
+        }
+    }
+}
