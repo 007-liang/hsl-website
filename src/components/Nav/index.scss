@@ -4,13 +4,16 @@
 }
 
 header {
-    height: 210px;
+    .phone-but {
+        display: none;
+    }
 
     .header {
         display: flex;
         height: 145px;
         justify-content: space-between;
         align-items: center;
+        transition: height 0.5s;
 
         h1 {
             width: 220px;

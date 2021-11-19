@@ -1,5 +1,6 @@
 import { useHistory } from "react-router";
 import "./index.scss";
+import "./media.scss";
 
 interface IProps {
     src: string;
@@ -9,7 +10,7 @@ interface IProps {
 
 const CooperationCard: React.FC<IProps> = (props) => {
     let history = useHistory();
-    let { src, name, to } = props;
+    let { src, name, to } = props;  
 
     return (
         <div

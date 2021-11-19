@@ -10,6 +10,17 @@
 .ant-carousel {
     position: relative;
 
+    .slick-list {
+        transition: all 0.5s;
+    }
+
+    img {
+        width: 100%;
+        min-height: 500px;
+        object-fit: cover;
+        transition: min-height 0.5s;
+    }
+
     .slick-arrow {
         opacity: 0;
         position: absolute;
@@ -71,6 +82,7 @@
     margin-top: 60px;
     padding-top: 60px;
     height: 475px;
+    transition: padding 0.5s, height 0.5s;
 
     &::before {
         @include mask;
@@ -82,11 +94,27 @@
         display: flex;
         position: relative;
 
+        .about-img {
+            min-width: 300px            ;
+            transition: width 0.5s;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
         .about-container {
             padding: 22px 30px;
+            height: 300px;
             color: #fff;
             background-color: $main-color;
             transform: translateY(10px);
+            transition: padding 0.5s;
+            transition: width 0.5s, height 0.5s;
 
             h3 {
                 color: #fff;
@@ -164,11 +192,15 @@
 .home-cooperation {
     position: relative;
     padding-top: 20px;
-    height: 855px;
+    padding-bottom: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .container {
         position: relative;
         z-index: 10;
+        transition: padding 0.5s;
     }
 
     &::before {
@@ -176,4 +208,8 @@
         opacity: 0.6;
         background-color: #fff;
     }
+}
+
+.layout .list:nth-child(1n +3) {
+    border-top: 1px solid #ccc;
 }

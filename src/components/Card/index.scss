@@ -1,6 +1,7 @@
 .card {
-    flex-basis: 300px;
+    width: 300px;
     cursor: pointer;
+    transition: transform 0.5s, width 0.5s;
 
     .card-dis {
         position: relative;

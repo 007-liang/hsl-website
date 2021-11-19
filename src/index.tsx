@@ -4,7 +4,8 @@ import Router from './router';
 import { ConfigProvider } from 'antd';
 import zhCN from 'antd/lib/locale/zh_CN';
 import 'antd/dist/antd.css';
-import "./index.scss"
+import "./index.scss";
+import "./media.scss";
 
 
 ReactDOM.render(

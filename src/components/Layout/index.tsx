@@ -1,16 +1,21 @@
-import "./index.scss"
+import "./index.scss";
+import "./media.scss";
 
 interface IProps {
-    gap?: string
+    gap?: string;
+    column?: boolean;
 }
 
 const Layout: React.FC<IProps> = (props) => {
-    let { gap } = props;
+    let { gap, column,  } = props;
+    let flexDirection: "column" | "row" = column ? "column" : "row";
+
     return (
         <div
             className="layout"
             style={{
-                gap
+                gap,
+                flexDirection,
             }}
         >
             {props.children}

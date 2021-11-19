@@ -1,0 +1,24 @@
+@media all and (max-width: 1260px) {
+    .container {
+        width: 1000px;
+    }
+}
+
+
+@media all and (max-width: 1000px) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .container {
+        width: 600px;
+    }
+}
+
+@media all and (max-width: 786px) and (min-width: 375px) {
+    .container {
+        width: 90%;
+    }
+}

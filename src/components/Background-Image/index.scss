@@ -1,0 +1,22 @@
+.background-image {
+    height: 500px;
+    transition: height 0.5s;
+}
+
+@media all and (max-width: 1200px) and (min-width: 1000px) {
+    .background-image {
+        min-height: 200px;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 786px) {
+    .background-image {
+        min-height: 300px;
+    }
+}
+
+@media all and (max-width: 786px) and (min-width: 375px) {
+    .background-image {
+        min-height: 200px;
+    }
+}

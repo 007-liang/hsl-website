@@ -16,6 +16,7 @@ import {
 } from "./data";
 
 import "./index.scss";
+import "./media.scss";
 
 const Home: React.FC = () => {
     let history = useHistory();
@@ -64,12 +65,13 @@ const Home: React.FC = () => {
             </Carousel>
             <div className="container">
                 <Title name="业务中心" english="Business Center"></Title>
-                <Layout>
+                <Layout gap="20px">
                     {
-                        cards.map(card => {
+                        cards.map((card, i) => {
+                            if (i > 2) return;
                             return (
                                 <Card
-                                    key={card.title}
+                                    key={i}
                                     title={card.title}
                                     dis={card.dis}
                                     src={card.src}
@@ -130,6 +132,7 @@ const Home: React.FC = () => {
                     <Layout gap="0px 20px">
                         {
                             news.map((item, i) => {
+                                if (i > 3) return null;
                                 return (
                                     <List 
                                         key={i}

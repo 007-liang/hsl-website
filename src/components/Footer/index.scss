@@ -4,7 +4,6 @@ footer {
 
     .container {
         padding-top: 20px;
-        height: 275px;
 
         h2 {
             text-align: center;
@@ -18,8 +17,13 @@ footer {
         justify-content: space-between;
 
         .footer-nav-title {
+            display: flex;
             color: #ffffff;
             margin-bottom: 20px;
+
+            .icon-arrow {
+                display: none;
+            }
         }
 
         li,
@@ -28,9 +32,14 @@ footer {
             color: #b2b2b2;
         }
 
+        li> a:hover {
+            color: #fff;
+        }
+
         .footer-nav {
             display: flex;
-            gap: 0 40px;
+            gap: 40px 40px;
+            transition: padding-bottom 0.5s, margin-bottom 0.5s;
         }
 
         .footer-follow {
@@ -43,6 +52,7 @@ footer {
             img {
                 margin: 10px 0;
             }
+
             p {
                 color: #b2b2b2;
             }

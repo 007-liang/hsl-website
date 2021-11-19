@@ -1,6 +1,6 @@
 import { useHistory } from "react-router";
-
 import "./index.scss"; 
+import "./media.scss";
 
 interface IProps {
     title: string,

@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Nav from "@/components/Nav";
 import Footer from '@/components/Footer';
+import BackTop from '@/components/backTop';
 import routers from './router';
 
 
@@ -23,9 +24,10 @@ const Router: React.FC = () => {
                     })
                 }
             </Switch>
+            <BackTop></BackTop>
             <Footer></Footer>
         </BrowserRouter>
-    )
-}
+    );
+};
 
 export default Router;

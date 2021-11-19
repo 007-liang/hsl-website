@@ -1,0 +1,12 @@
+@media all and (max-width: 1000px) {
+    .card {
+        width: 370px;
+    }
+}
+
+@media all and (max-width: 786px) and (min-width: 375px) {
+    .card {
+        width: 370px;
+        transform: translateX(0) !important;
+    }
+}
